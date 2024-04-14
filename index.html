@@ -18,6 +18,9 @@
 
         .container {
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         h1 {
@@ -28,6 +31,45 @@
 
         p {
             font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 800px;
+            max-width: 100%;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 16px;
             color: #666;
         }
 
@@ -44,7 +86,33 @@
 <body>
     <div class="container">
         <h1>Al Haddad Digital Portfolio</h1>
-        <p>Welcome to my digital portfolio. Feel free to <a href="#">explore</a>!</p>
+        <p>Welcome to my digital portfolio. Feel free to explore!</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/410/388/datas/original.png" alt="Sprig's Homepage">
+                <div class="card-content">
+                    <h3>HackCU 1st Place</h3>
+                    <p>My team and I designed a website for sustainability within 24 hours using SQLite, HTML, CSS, Javascript, NodeJs, and Boostrap. Check it out <a href="https://devpost.com/software/sprig">here</a>!</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://esiil.org/sites/default/files/styles/banner/public/2023-09/Google%20form%20Headers%20%284%29.png?itok=4yMsP0ZV" alt="From the Environmental Innovation and Inclusion Lab Website">
+                <div class="card-content">
+                    <h3>Environmental MosAIc 1st Place</h3>
+                    <p>My team and I designed a project to analyze the correlation between plant diversity and wildfire resilence, just using geospatial data. <a href="resources/Team A_EarthByte Ensemble Pitch.pdf">This project</a> will be continued this summer with research funding from ESIIL!</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="resources/revessel.png" alt="App Demo I designed and presented!">
+                <div class="card-content">
+                    <h3>CU Sustainability Hackathon 2nd Place</h3>
+                    <p>We pitched a business idea - <a href="https://www.linkedin.com/feed/update/urn:li:activity:7130372354316075008/"> ReVessel</a> - an app and service that would utilize renewable, returnable, coffee cups to reduce wastes and create incentives for businesses and consumers alike. My role mostly concerned app design.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
